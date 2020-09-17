@@ -1,0 +1,34 @@
+.option {
+  border-bottom: 1px solid lighten($off-white, 10%);
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size $m-size;
+}
+.option__text {
+  color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: auto 0;
+  word-break: break-all;
+}
+
+.option__action {
+  display: flex;
+}
+.option__action div {
+  font-size: 2.5rem;
+  display: flex;
+  color: white;
+  background: $dark-blue;
+  min-width: $xl-size;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.3rem solid lighten($light-blue, 10%);
+}
+.option__action button {
+  margin-left: $s-size;
+}
+.minus {
+  background: $red;
+  border-bottom: 0.3rem solid darken($red, 10%);
+}
