@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/hotroconbac/static/css/main.0e8d3f18.chunk.css",
+    "main.js": "/hotroconbac/static/js/main.61bf92cd.chunk.js",
+    "main.js.map": "/hotroconbac/static/js/main.61bf92cd.chunk.js.map",
+    "runtime-main.js": "/hotroconbac/static/js/runtime-main.0c57c90b.js",
+    "runtime-main.js.map": "/hotroconbac/static/js/runtime-main.0c57c90b.js.map",
+    "static/css/2.764ccc25.chunk.css": "/hotroconbac/static/css/2.764ccc25.chunk.css",
+    "static/js/2.d0cb5c02.chunk.js": "/hotroconbac/static/js/2.d0cb5c02.chunk.js",
+    "static/js/2.d0cb5c02.chunk.js.map": "/hotroconbac/static/js/2.d0cb5c02.chunk.js.map",
+    "index.html": "/hotroconbac/index.html",
+    "precache-manifest.b81192418a04611d717a00ffd76ad462.js": "/hotroconbac/precache-manifest.b81192418a04611d717a00ffd76ad462.js",
+    "service-worker.js": "/hotroconbac/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/hotroconbac/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.0e8d3f18.chunk.css.map": "/hotroconbac/static/css/main.0e8d3f18.chunk.css.map",
+    "static/js/2.d0cb5c02.chunk.js.LICENSE.txt": "/hotroconbac/static/js/2.d0cb5c02.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c57c90b.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.d0cb5c02.chunk.js",
+    "static/css/main.0e8d3f18.chunk.css",
+    "static/js/main.61bf92cd.chunk.js"
+  ]
+}

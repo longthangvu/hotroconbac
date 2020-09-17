@@ -1,0 +1,32 @@
+{
+  "short_name": "Tinh tien",
+  "name": "Ho Tro Con Bac",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "112x112",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "gooder-icon.ico",
+      "sizes": "224x224",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "112x112",
+      "type": "image/png"
+    },
+    {
+      "src": "gooder-logo.png",
+      "sizes": "224x224",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
