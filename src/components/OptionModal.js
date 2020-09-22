@@ -1,7 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Modal from 'react-modal'
+import { closeModal } from '../actions'
 
-export default class OptionModal extends React.Component {
+class OptionModal extends React.Component {
   componentDidMount = () => {
     Modal.setAppElement('body')
   }
@@ -9,8 +11,8 @@ export default class OptionModal extends React.Component {
     return (
       <Modal
         isOpen={!!this.props.openingModal}
-        contentLabel="Selected Option"
-        onRequestClose={this.props.handleClearOpeningModal}
+        contentLabel="Show Results"
+        onRequestClose={this.props.closeModal}
         closeTimeoutMS={200}
         className="modal"
       >
@@ -36,10 +38,16 @@ export default class OptionModal extends React.Component {
             </div>
           ))}
         </div>
-        <button className="button" onClick={this.props.handleClearOpeningModal}>
+        <button className="button" onClick={this.props.closeModal}>
           Okay
         </button>
       </Modal>
     )
   }
 }
+
+const mapStateToProps = (state) => {
+  return { options: state.options, openingModal: state.openingModal }
+}
+
+export default connect(mapStateToProps, { closeModal })(OptionModal)

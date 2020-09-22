@@ -1,4 +1,6 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { openModal } from '../actions'
 import Emoji from './Emoji'
 
 const Action = (props) => (
@@ -6,11 +8,11 @@ const Action = (props) => (
     <button
       className="big-button"
       disabled={!props.hasOptions}
-      onClick={props.onOpenModal}
+      onClick={props.openModal}
     >
       Tính tiền! <Emoji symbol="💸💸💸" />
     </button>
   </div>
 )
 
-export default Action
+export default connect(null, { openModal })(Action)

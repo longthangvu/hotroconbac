@@ -1,6 +1,8 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import Emoji from './Emoji'
 import Option from './Option'
+import { deleteOptions } from '../actions'
 
 const Options = (props) => (
   <div>
@@ -8,10 +10,7 @@ const Options = (props) => (
       <h3 className="widget-header__title">
         <Emoji symbol="😎" /> Các con bạc:
       </h3>
-      <button
-        className="button button--link"
-        onClick={props.handleDeleteOptions}
-      >
+      <button className="button button--link" onClick={props.deleteOptions}>
         Xoá hếtttt!!! <Emoji symbol="😱" />
       </button>
     </div>
@@ -27,11 +26,13 @@ const Options = (props) => (
         count={index + 1}
         currentValue={option.currentValue}
         optionText={option.id}
-        handleDeleteOption={props.handleDeleteOption}
-        onChangeValue={props.onChangeValue}
       />
     ))}
   </div>
 )
 
-export default Options
+const mapStateToProps = (state) => {
+  return { options: state.options }
+}
+
+export default connect(mapStateToProps, { deleteOptions })(Options)

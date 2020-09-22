@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Header = (props) => (
   <div className="header">
@@ -7,9 +7,10 @@ const Header = (props) => (
       <p className="header__subtitle">{props.subtitle}</p>
     </div>
   </div>
-);
+)
 
 Header.defaultProps = {
-  title: "Hỗ trợ con bạc",
-};
-export default Header;
+  title: 'Hỗ trợ con bạc',
+  subtitle: `"Cờ bạc người chơi là người thua, người không chơi không bao giờ thắng"`,
+}
+export default Header

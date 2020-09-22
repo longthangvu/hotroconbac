@@ -1,46 +1,38 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { incrementValue, decrementValue } from '../actions'
 
-export default class Option extends React.Component {
-  onChangeValue = (e) => {
-    this.props.onChangeValue(this.props.id, e.target.innerHTML)
-  }
-  render() {
-    return (
-      <div className="option">
-        <p className="option__text">
-          {this.props.count}. {this.props.optionText}
-        </p>
-        {/* <button
-          className="button button--link"
-          onClick={(e) => {
-            props.handleDeleteOption(props.optionText);
+const Option = (props) => (
+  <div className="option">
+    <p className="option__text">
+      {props.count}. {props.optionText}
+    </p>
+    <div className="option__action">
+      <div>
+        <span
+          style={{
+            color:
+              props.currentValue > 0
+                ? '#86c232'
+                : props.currentValue < 0
+                ? '#c70000'
+                : 'white',
           }}
         >
-          remove
-        </button> */}
-        <div className="option__action">
-          <div>
-            <span
-              style={{
-                color:
-                  this.props.currentValue > 0
-                    ? '#86c232'
-                    : this.props.currentValue < 0
-                    ? '#c70000'
-                    : 'white',
-              }}
-            >
-              {this.props.currentValue}
-            </span>
-          </div>
-          <button className="button minus" onClick={this.onChangeValue}>
-            -
-          </button>
-          <button className="button" onClick={this.onChangeValue}>
-            +
-          </button>
-        </div>
+          {props.currentValue}
+        </span>
       </div>
-    )
-  }
-}
+      <button
+        className="button minus"
+        onClick={() => props.decrementValue(props.id)}
+      >
+        -
+      </button>
+      <button className="button" onClick={() => props.incrementValue(props.id)}>
+        +
+      </button>
+    </div>
+  </div>
+)
+
+export default connect(null, { incrementValue, decrementValue })(Option)
