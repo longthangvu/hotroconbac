@@ -4,6 +4,7 @@ html {
   font-size: 62.5%;
 }
 body {
+  touch-action: manipulation;
   background: $dark-blue;
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
   font-size: $m-size;
