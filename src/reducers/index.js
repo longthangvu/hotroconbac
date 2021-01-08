@@ -30,6 +30,17 @@ const options = (state = [], action) => {
         return opt
       })
     }
+    case 'CHANGE': {
+      return state.map((opt) => {
+        if (opt.id === action.payload.id)
+          return {
+            id: action.payload.id,
+            currentValue: action.payload.value,
+            totalValue: opt.totalValue,
+          }
+        return opt
+      })
+    }
     case 'END_ROUND': {
       return state.map((opt) => ({
         id: opt.id,

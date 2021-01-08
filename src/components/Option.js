@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { incrementValue, decrementValue } from '../actions'
+import { incrementValue, decrementValue, changeValue } from '../actions'
 
 const Option = (props) => (
   <div className="option">
@@ -8,23 +8,41 @@ const Option = (props) => (
       {props.count}. {props.optionText}
     </p>
     <div className="option__action">
-      <div>
-        <span
-          style={{
-            color:
-              props.currentValue > 0
-                ? '#86c232'
-                : props.currentValue < 0
-                ? '#c70000'
-                : 'white',
-          }}
-        >
-          {props.currentValue}
-        </span>
-      </div>
+      <input
+        onChange={(e) => {
+          if (props.currentValue !== 0)
+            if (
+              /^([+-]?[1-9]\d*|0|-)$/.test(e.target.value) &&
+              Math.abs(e.target.value).toString().length < 3
+            ) {
+              props.changeValue(
+                props.id,
+                parseInt(e.target.value) ? parseInt(e.target.value) : '-'
+              )
+            }
+          if (!e.target.value) props.changeValue(props.id, 0)
+          else
+            props.changeValue(
+              props.id,
+              parseInt(e.target.value) ? parseInt(e.target.value) : '-'
+            )
+        }}
+        type="text"
+        value={props.currentValue}
+        style={{
+          color:
+            props.currentValue > 0
+              ? '#86c232'
+              : props.currentValue < 0
+              ? '#c70000'
+              : 'white',
+        }}
+      />
       <button
         className="button minus"
-        onClick={() => props.decrementValue(props.id)}
+        onClick={() => {
+          props.decrementValue(props.id)
+        }}
       >
         -
       </button>
@@ -35,4 +53,6 @@ const Option = (props) => (
   </div>
 )
 
-export default connect(null, { incrementValue, decrementValue })(Option)
+export default connect(null, { incrementValue, decrementValue, changeValue })(
+  Option
+)

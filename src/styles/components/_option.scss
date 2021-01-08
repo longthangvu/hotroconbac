@@ -15,12 +15,13 @@
 .option__action {
   display: flex;
 }
-.option__action div {
+.option__action input {
+  text-align: center;
   font-size: 2.5rem;
   display: flex;
   color: white;
   background: $dark-blue;
-  min-width: $xl-size;
+  width: $xl-size;
   justify-content: center;
   align-items: center;
   border-bottom: 0.3rem solid lighten($light-blue, 10%);

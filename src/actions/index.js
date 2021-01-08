@@ -27,6 +27,15 @@ export const incrementValue = (id) => {
     },
   }
 }
+export const changeValue = (id, value) => {
+  return {
+    type: 'CHANGE',
+    payload: {
+      id,
+      value,
+    },
+  }
+}
 export const decrementValue = (id) => {
   return {
     type: 'DECREMENT',
