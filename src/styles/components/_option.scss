@@ -21,7 +21,7 @@
   display: flex;
   color: white;
   background: $dark-blue;
-  width: $xl-size;
+  width: calc(#{$xl-size} - 4px);
   justify-content: center;
   align-items: center;
   border-bottom: 0.3rem solid lighten($light-blue, 10%);

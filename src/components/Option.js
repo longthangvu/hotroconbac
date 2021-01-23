@@ -26,6 +26,8 @@ const Option = (props) => (
               props.id,
               parseInt(e.target.value) ? parseInt(e.target.value) : '-'
             )
+          if (e.target.value > 100 || e.target.value < -100)
+            props.changeValue(props.id, parseInt(e.target.value / 10))
         }}
         type="text"
         value={props.currentValue}
@@ -40,13 +42,22 @@ const Option = (props) => (
       />
       <button
         className="button minus"
-        onClick={() => {
-          props.decrementValue(props.id)
-        }}
+        onClick={() =>
+          !isNaN(props.currentValue)
+            ? props.decrementValue(props.id)
+            : props.changeValue(props.id, -1)
+        }
       >
         -
       </button>
-      <button className="button" onClick={() => props.incrementValue(props.id)}>
+      <button
+        className="button"
+        onClick={() =>
+          !isNaN(props.currentValue)
+            ? props.incrementValue(props.id)
+            : props.changeValue(props.id, 0)
+        }
+      >
         +
       </button>
     </div>
