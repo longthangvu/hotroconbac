@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "38d134da5e431f23096037e53829d8e3",
+    "revision": "8c4224e5ab60dcf5d83b975597ed2f14",
     "url": "/hotroconbac/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hotroconbac/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "9ad55d38172c600536ac",
+    "revision": "8d583b3074cee361b7af",
     "url": "/hotroconbac/static/css/main.042e5f74.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hotroconbac/static/js/2.9f43c36c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ad55d38172c600536ac",
-    "url": "/hotroconbac/static/js/main.4b998417.chunk.js"
+    "revision": "8d583b3074cee361b7af",
+    "url": "/hotroconbac/static/js/main.8560b861.chunk.js"
   },
   {
     "revision": "1672cb44d34cc86044c8",
