@@ -30,6 +30,8 @@ class OptionModal extends React.Component {
                         : opt.totalValue.reduce((a, b) => a + b, 0) < 0
                         ? '#c70000'
                         : 'white',
+                    fontFamily: ['Zen Dots', 
+                    'cursive']
                   }}
                 >
                   <span>{opt.totalValue.reduce((a, b) => a + b, 0)}</span>

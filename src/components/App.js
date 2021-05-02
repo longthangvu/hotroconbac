@@ -5,7 +5,6 @@ import Options from './Options'
 import Action from './Action'
 import Header from './Header'
 import OptionModal from './OptionModal'
-import Emoji from './Emoji'
 import { addOption, addOptions, endRound } from '../actions'
 
 class App extends React.Component {
@@ -48,7 +47,7 @@ class App extends React.Component {
               disabled={currentTotalValue !== 0}
               onClick={this.props.endRound}
             >
-              Chốt! <Emoji symbol="🤑" />
+              Chốt!
             </button>
             <AddOption onAddOption={this.onAddOption} />
           </div>

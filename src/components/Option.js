@@ -9,17 +9,21 @@ const Option = (props) => (
     </p>
     <div className="option__action">
       <input
+        onFocus={
+          () => {
+            if(props.currentValue.toString() === '0') props.changeValue(props.id, '-')
+          }
+        }
         onChange={(e) => {
           if (props.currentValue !== 0)
             if (
               /^([+-]?[1-9]\d*|0|-)$/.test(e.target.value) &&
               Math.abs(e.target.value).toString().length < 3
-            ) {
+            ) 
               props.changeValue(
                 props.id,
                 parseInt(e.target.value) ? parseInt(e.target.value) : '-'
               )
-            }
           if (!e.target.value) props.changeValue(props.id, 0)
           else
             props.changeValue(

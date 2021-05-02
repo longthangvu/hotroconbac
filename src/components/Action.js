@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { openModal } from '../actions'
-import Emoji from './Emoji'
 
 const Action = (props) => (
   <div>
@@ -10,7 +9,7 @@ const Action = (props) => (
       disabled={!props.hasOptions}
       onClick={props.openModal}
     >
-      Tính tiền! <Emoji symbol="💸💸💸" />
+      Tính tiền!
     </button>
   </div>
 )

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   padding: $m-size $m-size;
+  font-size: large;
 }
 .option__text {
   color: white;
@@ -16,20 +17,33 @@
   display: flex;
 }
 .option__action input {
+  line-height: 0;
+  font-family: 'Zen Dots', cursive;
   text-align: center;
-  font-size: 2.5rem;
   display: flex;
   color: white;
   background: $dark-blue;
-  width: calc(#{$xl-size} - 4px);
+  width: $l-size;
+  height: $l-size;
   justify-content: center;
   align-items: center;
   border-bottom: 0.3rem solid lighten($light-blue, 10%);
 }
 .option__action button {
   margin-left: $s-size;
+  border-radius: 6%;
+  line-height: 0;
+  height: $xl-size;
+  padding-bottom: calc(#{$xs-size} + #{$s-size});
+  font-size: xx-large;
 }
 .minus {
   background: $red;
   border-bottom: 0.3rem solid darken($red, 10%);
+}
+@media (min-width: $desktop-breakpoint) {
+  .option__action input {
+    width: calc(#{$xl-size} - 5px);
+    height: calc(#{$xl-size} - 5px);
+  }
 }

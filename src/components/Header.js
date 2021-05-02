@@ -11,6 +11,6 @@ const Header = (props) => (
 
 Header.defaultProps = {
   title: 'Hỗ trợ con bạc',
-  subtitle: `"Cờ bạc người chơi là người thua, người không chơi không bao giờ thắng"`,
+  subtitle: `“Cờ bạc người chơi là người thua, người không chơi không bao giờ thắng”`,
 }
 export default Header
