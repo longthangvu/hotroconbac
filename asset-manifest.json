@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/hotroconbac/static/css/main.042e5f74.chunk.css",
-    "main.js": "/hotroconbac/static/js/main.8560b861.chunk.js",
-    "main.js.map": "/hotroconbac/static/js/main.8560b861.chunk.js.map",
+    "main.css": "/hotroconbac/static/css/main.8fde996d.chunk.css",
+    "main.js": "/hotroconbac/static/js/main.32cd204e.chunk.js",
+    "main.js.map": "/hotroconbac/static/js/main.32cd204e.chunk.js.map",
     "runtime-main.js": "/hotroconbac/static/js/runtime-main.0c57c90b.js",
     "runtime-main.js.map": "/hotroconbac/static/js/runtime-main.0c57c90b.js.map",
     "static/css/2.764ccc25.chunk.css": "/hotroconbac/static/css/2.764ccc25.chunk.css",
     "static/js/2.9f43c36c.chunk.js": "/hotroconbac/static/js/2.9f43c36c.chunk.js",
     "static/js/2.9f43c36c.chunk.js.map": "/hotroconbac/static/js/2.9f43c36c.chunk.js.map",
     "index.html": "/hotroconbac/index.html",
-    "precache-manifest.3b9ccf005c253d793f60d1a01e1902aa.js": "/hotroconbac/precache-manifest.3b9ccf005c253d793f60d1a01e1902aa.js",
+    "precache-manifest.671a86de346eefcc6789d512feceb01f.js": "/hotroconbac/precache-manifest.671a86de346eefcc6789d512feceb01f.js",
     "service-worker.js": "/hotroconbac/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/hotroconbac/static/css/2.764ccc25.chunk.css.map",
-    "static/css/main.042e5f74.chunk.css.map": "/hotroconbac/static/css/main.042e5f74.chunk.css.map",
+    "static/css/main.8fde996d.chunk.css.map": "/hotroconbac/static/css/main.8fde996d.chunk.css.map",
     "static/js/2.9f43c36c.chunk.js.LICENSE.txt": "/hotroconbac/static/js/2.9f43c36c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0c57c90b.js",
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.9f43c36c.chunk.js",
-    "static/css/main.042e5f74.chunk.css",
-    "static/js/main.8560b861.chunk.js"
+    "static/css/main.8fde996d.chunk.css",
+    "static/js/main.32cd204e.chunk.js"
   ]
 }
