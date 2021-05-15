@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hotroconbac/precache-manifest.671a86de346eefcc6789d512feceb01f.js"
+  "/hotroconbac/precache-manifest.9df5738b8ad673936f5db04e59272e9a.js"
 );
 
 self.addEventListener('message', (event) => {
