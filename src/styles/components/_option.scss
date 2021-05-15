@@ -7,6 +7,7 @@
 }
 .option__text {
   color: white;
+  max-width: 80%;
   font-weight: 500;
   font-size: 2rem;
   margin: auto 0;
@@ -23,8 +24,8 @@
   display: flex;
   color: white;
   background: $dark-blue;
-  width: $l-size;
-  height: $l-size;
+  width: calc(#{$l-size} + 5px);
+  height: calc(#{$l-size} + 5px);
   justify-content: center;
   align-items: center;
   border-bottom: 0.3rem solid lighten($light-blue, 10%);
@@ -34,7 +35,6 @@
   border-radius: 6%;
   line-height: 0;
   height: $xl-size;
-  padding-bottom: calc(#{$xs-size} + #{$s-size});
   font-size: xx-large;
 }
 .minus {

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,300&display=swap');
 
 html {
   font-size: 62.5%;
@@ -7,7 +7,7 @@ html {
 body {
   touch-action: manipulation;
   background: $dark-blue;
-  font-family: 'Be Vietnam', Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-size: $m-size;
 }
 
